@@ -26,6 +26,12 @@ public class Conversor {
         int dolar = 466;
         String pesos = "0";
         int dolares = 0;
+        String opcionElegida;
+               
+        String [] opciones = {"I adore turtles", "Yes", "Maybe", "Urm...", "No", "Hate them"};
+
+        
+        opcionElegida = (String) JOptionPane.showInputDialog(null, "Elija una opción:", "Conversor de divisas", JOptionPane.QUESTION_MESSAGE, null, opciones, opciones[2]);
         
         pesos = JOptionPane.showInputDialog("Indroduzca pesos a convertir");
         dolares = Integer.parseInt(pesos) / dolar;
