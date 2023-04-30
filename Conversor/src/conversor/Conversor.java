@@ -8,6 +8,9 @@ package conversor;
  *
  * @author alvaro
  */
+
+import javax.swing.*;
+
 public class Conversor {
 
     /**
@@ -15,6 +18,20 @@ public class Conversor {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("hola mundo!");
+        //Ventana v = new Ventana();
+        //v.setVisible(true);
+        //v.setLocationRelativeTo(null);
+        
+        int dolar = 466;
+        String pesos = "0";
+        int dolares = 0;
+        
+        pesos = JOptionPane.showInputDialog("Indroduzca pesos a convertir");
+        dolares = Integer.parseInt(pesos) / dolar;
+        
+        JOptionPane.showMessageDialog(null, "Dolares"+dolares);
+        
     }
-    
+
 }
