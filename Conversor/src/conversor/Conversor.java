@@ -1,27 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package conversor;
 
-/**
- *
- * @author alvaro
- */
 import javax.swing.*;
 
 public class Conversor {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("hola mundo!");
-        //Ventana v = new Ventana();
-        //v.setVisible(true);
-        //v.setLocationRelativeTo(null);
 
+        int ventanaYesNo = 0;
+
+        do {
+            convertir();
+            ventanaYesNo = JOptionPane.showConfirmDialog(null, "¿Quieres salir del programa?", "Conversor", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+        } while (ventanaYesNo == 1);
+        
+        JOptionPane.showMessageDialog(null, "Hasta la próxima!");
+    }
+
+    public static void convertir() {
         /*
         dolar = 222,64
         euro = 245,25
